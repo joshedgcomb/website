@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - microblog</title>
+    {% else %}
+    <title>microblog</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Josh Edgcomb <a href="/">Home</a>
+      <a href="https://github.com/joshedgcomb">Github</a>
+      <a href="/">Blog</a>
+      <a href="/">Twitter</a></div>
+       <img src="//images/josh.jpg" alt="some_text">
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
