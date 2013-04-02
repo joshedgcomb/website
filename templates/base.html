@@ -2,7 +2,7 @@
 <html>
   <head>
     {% if title %}
-    <title>{{title}} - microblog</title>
+    <title>Josh Edgcomb - {{title}}</title>
     {% else %}
     <title>microblog</title>
     {% endif %}
@@ -12,7 +12,7 @@
       <a href="https://github.com/joshedgcomb">Github</a>
       <a href="/">Blog</a>
       <a href="/">Twitter</a></div>
-       <img src="//images/josh.jpg" alt="some_text">
+       <img src='{{url_for('static',filename='images/josh.jpg')}}' alt = "fuckyou">
     <hr>
     {% block content %}{% endblock %}
   </body>

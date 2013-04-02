@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 
 app = Flask(__name__)
@@ -23,10 +23,7 @@ def hello():
         {'author': {'nickname': "Josh"},
          'body': 'Steve is an asshole!'}
     ]
-    return render_template("index.html",
-                           title='Home',
-                           user=user,
-                           posts=posts)
+    return render_template("index.html")
 
 
 if __name__ == '__main__':
