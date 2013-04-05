@@ -426,11 +426,10 @@ footer {
 /* Logo */
 header hgroup {
     position: absolute;
-    background: no-repeat
-;    height: 62px;
-    width: 215px;
+    height: 62px;
+    width: 500px;
     display: block;
-    top: 100px;
+    top: 40px;
     left: 10px;
 }
 header hgroup h1 {
@@ -444,8 +443,9 @@ header hgroup h1 a {
     width: 215px;
 }
 header hgroup h3  {
-    text-indent: -9999em;
-    height: 0;
+    text-indent: 2em;
+    font-size: 1em;
+    height: 20;
 }
 
 /*  Main Navigation  */
