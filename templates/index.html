@@ -30,12 +30,9 @@
 		<!-- navigation -->
 		<div  id="nav">
 			<ul>
-				<li id="current"><a href="index.html">Home</a></li>
-				<li><a href="style.html">Style Demo</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="index.html">Services</a></li>
-				<li><a href="index.html">Support</a></li>
-				<li><a href="index.html">About</a></li>		
+				<li id="current"><a href="/">Home</a></li>
+				<li><a href="https://www.github.com/joshedgcomb">Github</a></li>
+				<li><a href="/about">About Me</a></li>		
 			</ul>		
 		</div>				
 	
@@ -190,7 +187,7 @@
 						<p>
 						<label for="qsearch">Search:</label>
 						<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
-						<input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="images/search.gif" />
+						<input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="{{ url_for('static', filename='css/screen.css') }}" />
 						</p>
 					</form>	
 				
