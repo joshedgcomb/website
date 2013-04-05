@@ -63,7 +63,11 @@ html {
 body {
 	font: 15px/24px Georgia, Serif;
 	color: #454545;
-   	background: url(../images/bg.png);
+   	background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 /* Links */
 a:link, a:visited {
@@ -345,28 +349,37 @@ form input.button {
 /* --------------------------------------------------------------------------
     S T R U C T U R E
 --------------------------------------------------------------------------- */
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
 #header-wrap {
-    float: left;
+    float: right;
     height: 200px;
     width: 100%;
-    background: url(../images/header-bg.png) repeat-x;
+    min-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #000000 url(../images/header-bg.png) repeat-x;
+
 }
 header {
     position: relative;
-    margin: 0 auto;
     width: 978px;
 }
 #content-wrap {
     margin: 0;
-    padding: 0;
-    background: url(../images/content.png);
+    padding-bottom: 0px;
+    background: #ffffff;
     width: 100%;
 }
 #content {
-    width: 978px;
-    margin: 0 auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 0 24px 0;
-    background: url(../images/content-bg.png) repeat-y left top;
+    background: #ffffff repeat-y left top;
 }
 #main {
 	float: left;
@@ -383,7 +396,7 @@ header {
     float: right;
     margin: 45px 0 24px 0;
     padding: 0;
-    width: 222px;
+    width: 0px;
 }
 #extra-wrap {
 	width: 100%;
@@ -407,8 +420,13 @@ header {
     margin-left: 0;
 }
 footer {
+    position: absolute;
+    bottom:0;
+    left:0;
 	clear: both;
+    min-width: 100%;
     width: 978px;
+    height: 30px;
 	margin: 0 auto;
     padding-top: 12px;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Sans-Serif;
@@ -416,7 +434,7 @@ footer {
     font-size: 11px;
 	color: #C2DBE7;
     overflow: hidden;
-    background: url(../images/footer-line.png) repeat-x left top;
+    background: #006ace url(../images/footer-line.png) repeat-x left top;
 }
 
 /* --------------------------------------------------------------------------
@@ -429,7 +447,7 @@ header hgroup {
     height: 62px;
     width: 500px;
     display: block;
-    top: 40px;
+    top: 100px;
     left: 10px;
 }
 header hgroup h1 {
@@ -437,13 +455,11 @@ header hgroup h1 {
     padding: 0;
 }
 header hgroup h1 a {
-    text-indent: -9999em;
+    text-indent: 0;
     display: block;
-    height: 48px;
-    width: 215px;
+
 }
 header hgroup h3  {
-    text-indent: 2em;
     font-size: 1em;
     height: 20;
 }
